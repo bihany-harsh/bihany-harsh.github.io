@@ -8,7 +8,7 @@ redirect_from:
 ---
 I am **Harsh Bihany**, a senior undergraduate student at Indian Institute of Technology Kanpur, and am pursuing my bachelor's in [Computer Science and Engineering](https://cse.iitk.ac.in). I have some very varied interests.
 
-I have delved a bit in the working of the **Linux EXT4 filesystem**. Currently I am working on augmentations on **LoRA** (low-rank adaptation of LLMs) and also working on **multi-agent RL** settings over **LTL-specifications**.
+I have delved a bit in the working of the **Linux EXT4 filesystem**. Currently I am working on augmentations on **LoRA** (low-rank adaptation of LLMs) and also working on **multi-agent distributed RL** settings over **temporal and epistemic specifications** or other specification bounds. I am also interested in understanding a LLMs ability to align with a given **ethical code of conduct** as well in unearthing the **emergent properties** of modern-day LLMs like ICL (In-context Learning) from a much more mathematical and/or Bayesian perspective.
 
 ---
 
