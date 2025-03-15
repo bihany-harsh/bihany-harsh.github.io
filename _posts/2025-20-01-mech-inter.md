@@ -79,7 +79,88 @@ Notice the embedding back is through a *separate* circuit (not exactly). Kindly 
 
 This becomes interesting in the discussion of attention-only transformers.
 
-(T.B.C. soon)
+## Zero-layer Transformer
+
+What we have essentially is just an unembedding layer (which gives a probability distribution for the next token) on top of the the lookup-table (embedding). The absence of any attention modules makes it so that information is *static*, i.e., it does move between tokens, so the next token prediction is solely on the basis of the last token. Hence the *expected optimal behaviour* would be that of a bigram-probability table over tokens.
+
+## One-layer Attention-only Transformers
+
+The set of operations are:
+
+$$
+\begin{align*}
+x_0 &= W_E t \\
+x_1 &= x_0 + \sum_{h \in H} h(x_0) \\
+T(t) &= W_U x_1
+\end{align*}
+$$
+
+The equivalent tensor representation is:
+
+$$ T = Id \otimes W_U \cdot \left( Id + \sum_{h \in H} A^h \otimes W_{OV}^h \right) \cdot Id \otimes W_E$$
+
+where \\( A_h = \texttt{softmax}^\ast \left( t^T \cdot W_E^T W_{QK}^h W_E \cdot t \right) \\)
+
+This can be equivalently written as
+
+$$
+
+T = \underbrace{Id \otimes W_U W_E}_{\text{Direct path: bigram}} + \underbrace{\sum_{h \in H} A^h \otimes (W_UW_{OV}^hW_E)}_{\substack{\text{effect of attention heads, how} \\ \text{the token changes the logits}}}
+
+$$
+
+Consider the following dimensionality analysis, \\( Id \in \mathbb{R}^{n \times n} \\) and \\( W_U \in \mathbb{R}^{V \times d}, W_E \in \mathbb{R}^{d \times V} \\), similarly aligning gives \\( T \in \mathbb{R}^{nV \times nV} \\), where \\(n\\) is *sequence length* and \\(V\\) is *vocab size*, now assume that \\(t \in \mathbb{R}^{nV \times 1}\\) giving the desired dimentions (the output probability distribution).
+
+These two end-to-end paths are tractable to be understand.
+
+- > `verbatim` The direct path term, also occurred when we looked at the zero-layer transformer. Because it doesn’t move information between positions. The only thing it can contribute to is the bigram statictics.
+
+### The Query-Key and Output-Value circuits
+
+For each attention head \\(A^h \otimes (W_U W_{OV}^h W_E) \\). There are two \\( (V \times V) \\) matrices which are:
+
+- \\(W_E^TW_{QK}^H W_E \\) is called "query-key" circuit. Each entry describes '*how much*' a given query token wants to attent to a token.
+- \\( W_U W_{OV}^h W_E \\) is called "output-value" circuit. Describes how a given token '*will effect*' the output logits if needed to. 
+
+The corresponding interepretability of these tables into *skip-trigrams* because the size of the these circuits is large. Secondly the correlation of variables means that the parameters can not be alienated cleanly much like in any linear model. *Finally, there's a technical issue where QK weights aren't comparable between different query vectors, and there isn't a clear right answer as to how to normalize them.* The paper analyzes the large values from these matrices and presents certain intereseting results [[link]](https://transformer-circuits.pub/2021/framework/head_dump/small_a.html).
+
+A very interesting result presented in the paper is that of **bug trigrams**. Worth a look because it is interpretabiity predicting and specifying model failures.
+
+- > `verbatim` There are at least three reasons to expect there are (for better understading):
+
+  - > The OV and QK matrices are extremely low-rank. They are 50,000 x 50,000 matrices, but only rank \\(d_{head} \\) (64 or 128). In some sense, they're quite small even though they appear large in their expanded form.
+  - > Looking at individual entries often reveals hints of much simpler structure. For example, we observe one head where names of people all have the top queries like " by" (e.g. "Anne… by → Anne") while location names have top queries like " from" (e.g. "Canada… from → Canada"). This hints at something like cluster structure in the matrix.
+  - > Copying behavior is widespread in OV matrices and arguably one of the most interesting behaviors \\(\dots\\) It seems like it should be possible to formalize this.
+
+- > Food for thought ...
+
+The rank-inhibition of OV and QK circuits allows for its decompostion into low-rank SVD or eigen matrices. Does a PCA/LDA representation of say 95% variance allows for the recovery of \\(\geq \\) 95% of skip-trigrams. How does loss in expressivity account for loss in textual statistics.
+
+The paper carries eigen-analysis for the copying observation and reveals some great insights.
+
+- > `verbatim` for example, there can be matrices with all positive eigenvalues that actually map some tokens to decreasing the logits of that same token. Positive eigenvalues still mean that the matrix is, in some sense, "copying on average", and they're still quite strong evidence of copying in that they seem improbable by default and empirically seem to align with copying.
+
+## Two-Layer Attention-Only Transformers
+
+The composition of attention allows for much more powerful representations than just skip-trigrams which comes with it bugs and conditonal statistics. The composition includes reading in the Query, Key and Value representation.
+
+- > `verbatim` Q- and K-Composition both affect the attention pattern, allowing attention heads to express much more complex patterns. V-Composition, on the other hand, affects what information an attention head moves when it attends to a given position; the result is that V-composed heads really act more like a single unit and can be thought of as creating an additional "virtual attention heads".
+
+The same tensor representation gives:
+
+$$
+
+\begin{align*}
+T &= Id \otimes W_U \cdot \left( Id + \sum_{h\in H_2} A^h \otimes W_{OV}^h \right) \cdot \left( Id + \sum_{h\in H_1} A^h \otimes W_{OV}^h \right) \cdot Id \otimes W_E\\
+
+&= Id \otimes W_UW_E + \sum_{h\in H_1\cup H_2} A^h \otimes W_{OV}^h + \underbrace{\sum_{h_2\in H_2} \sum_{h_1\in H_1} (A^{h_2} A^{h_1}) \otimes (W_UW_{OV}^{h_2}W_{OV}^{h_1}W_E)}_{\substack{\text{the } \textbf{virtual attention heads } \text{terms correspond to} \\ \text{the V-composition}}}\\
+\end{align*}
+
+$$
+
+
+(this feels slightly too verbose to continue for the specific reason that the paper becomes too detail-oriented and mathematical for further dissections. I will update the page on some more Foof-for-thought but summarizing seems like a mundane job, given how beautifully the paper itself is written).
+
 
 ---
 
