@@ -6,9 +6,9 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am **Harsh Bihany**, a senior undergraduate student at Indian Institute of Technology Kanpur, and am pursuing my bachelor's in [Computer Science and Engineering](https://cse.iitk.ac.in). I have some very varied interests.
+I am **Harsh Bihany**, a undergraduate from Indian Institute of Technology Kanpur, and have completed my bachelor's in [Computer Science and Engineering](https://cse.iitk.ac.in). I would soon be joining ETH Zurich, [Department of Computer Science](https://inf.ethz.ch/) for my Master's. I dearly hope everything pans out 😊. I have some very varied interests.
 
-I have delved a bit in the working of the **Linux EXT4 filesystem**. Currently I am working on augmentations on **LoRA** (low-rank adaptation of LLMs) and also working on **multi-agent distributed RL** settings over **temporal and epistemic specifications** or other specification bounds. I am also interested in understanding a LLMs ability to align with a given **ethical code of conduct** as well in unearthing the **emergent properties** of modern-day LLMs like ICL (In-context Learning) from a much more mathematical and/or Bayesian perspective.
+I have delved a bit in the working of the **Linux EXT4 filesystem**. Currently I am working on augmentations on **LoRA** (low-rank adaptation of LLMs). The current work is *under-review*. I am also working on **multi-agent distributed RL** settings over **temporal and epistemic specifications** or other specification bounds. I am also interested in understanding a LLMs ability to align with a given **ethical code of conduct** as well in unearthing the **emergent properties** of modern-day LLMs like ICL (In-context Learning) from a much more mathematical and/or Bayesian perspective.
 
 ---
 
@@ -19,8 +19,15 @@ I have delved a bit in the working of the **Linux EXT4 filesystem**. Currently I
 
 ## Work Experience
 
+> #### Undergraduate Researcher
+>
+> **Exploration Labs** [link](https://exploration-lab.github.io/)
+>
+> - Aug '24 - till date
+
 > #### Quantitative Trading Intern
 >
 > **Optiver, Amsterdam**
 >
 > - May '24 - Jul '24
+

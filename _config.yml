@@ -22,10 +22,11 @@ repository               : "bihany-harsh/bihany-harsh.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  # name             : "Your Sidebar Name"
+  # name             : "Harsh Bihany"
   pronouns         : # example: "she/her"  
   # bio              : "Short biography for the left-hand sidebar"
   location         : "IIT Kanpur"
+  # location         : "ETH Zurich"
   # employer         : "Red Brick University"
   uri              : # URL
   email            : "harshbihany7@gmail.com" 
