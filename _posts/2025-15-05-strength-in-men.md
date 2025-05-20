@@ -12,7 +12,6 @@ tags:
 
 > The world serrated when he arrived. The very clouds touched the earth, and lightning kissed the moss on the tendrils of grass. A hue of deep blood red with the white lightning at its epicentre, where the lord of thunder stood calm, breathing into the storm. Redemption burned in that heart of steel of his. A forge that melted rocks itself. Fallen from grace, he lurks in the shadows and hunts for vengeance.
 
-I write these words with a heavy heart. A lonely one. A broken one.
 First rule of engagement: put it into words.
 
 Loneliness is a cruel, quiet beast. I find myself envying those who can endure it with ease. I envy who I once was—someone who could survive on little. There’s a kind of sacred ignorance in emotional immaturity, one we often don’t appreciate until it’s gone. Because once you begin to truly see—to notice how people can be cold, sharp, indifferent, or simply drift away without notice—what creeps in is something bitter. A weight that doesn’t lift. Hopelessness, despair, sadness so thick it chokes—and alongside it, flashes of rage, helplessness, grief that winds itself into your very breath. Emotional pain doesn’t bruise where others can see, but it’s brutal all the same. To watch everything collapse, and still summon even a flicker of will to move forward—that is a test of spirit most can’t imagine.
