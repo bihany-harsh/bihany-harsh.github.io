@@ -6,28 +6,78 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am **Harsh Bihany**, a undergraduate from Indian Institute of Technology Kanpur, and have completed my bachelor's in [Computer Science and Engineering](https://cse.iitk.ac.in). I would soon be joining ETH Zurich, [Department of Computer Science](https://inf.ethz.ch/) for my Master's. I dearly hope everything pans out 😊. I have some very varied interests.
+<!-- ===== Introduction ===== -->
 
-I have delved a bit in the working of the **Linux EXT4 filesystem**. Currently I am working on augmentations on **LoRA** (low-rank adaptation of LLMs). The current work is *under-review*. I am also working on **multi-agent distributed RL** settings over **temporal and epistemic specifications** or other specification bounds. I am also interested in understanding a LLMs ability to align with a given **ethical code of conduct** as well in unearthing the **emergent properties** of modern-day LLMs like ICL (In-context Learning) from a much more mathematical and/or Bayesian perspective.
+I am **Harsh Bihany**, an undergraduate from the Indian Institute of Technology Kanpur, where I completed my Bachelor’s in [Computer Science and Engineering](https://cse.iitk.ac.in). I’ll soon be joining ETH Zurich’s [Department of Computer Science](https://inf.ethz.ch/) for my Master’s—fingers crossed everything pans out 😊. My interests span multiple areas in AI, from language models to multi-agent systems.
+
+Currently, I’m working on **multi-agent distributed reinforcement learning** under **temporal and epistemic specifications** (or other specification bounds).
 
 ---
 
-## Academic Achievments
+<!-- ===== Interests ===== -->
 
-- **Academic Excellence Award** three times in a row; 2021-22, 2022-23 and 2023-24, awarded at [IIT Kanpur](https://iitk.ac.in).
-- [**Aditya Birla Scholar**](https://www.adityabirlascholars.net/the-scholarship/) - 2021. One of the 16 selected students selected nationwide for the prestigious Scholarship.
+## Interests
+
+<div class="btn-group" role="group" aria-label="Interests">
+  <span class="btn">Natural Language Processing</span>
+  <span class="btn">Large Language Models</span>
+  <span class="btn">Language Model Optimization</span>
+  <span class="btn">Multi-agent Reinforcement Learning</span>
+  <span class="btn">Distributed Learning Systems</span>
+</div>
+
+---
+
+<!-- ===== Publications ===== -->
+
+## Publications
+
+- **“LoRMA: Low-Rank Multiplicative Adaptation for LLMs”**
+  *Harsh Bihany, Shubham Patel, & Ashutosh Modi*
+  Findings of the Association for Computational Linguistics: ACL 2025.
+  [📄 PDF](https://openreview.net/pdf?id=AXTK47joyI)
+
+<!-- > **Tip:** If you’d like to embed all my publications automatically, you can place a `publications.bib` file in `_bibliography/` and add `publication: true` to a dedicated `publications.md`—Academicpages will generate a formatted list for you. -->
+
+---
+
+<!-- ===== Academic Achievements ===== -->
+
+## Academic Achievements
+
+- 🎓 **Academic Excellence Award** (IIT Kanpur) – three consecutive years (2021–22, 2022–23, 2023–24)
+- 🏅 **Aditya Birla Scholar** – 2021 (One of 16 students selected nationwide for the scholarship)
+
+---
+
+<!-- ===== Work Experience ===== -->
 
 ## Work Experience
 
 > #### Undergraduate Researcher
 >
-> **Exploration Labs** [link](https://exploration-lab.github.io/)
->
-> - Aug '24 - till date
+> **Exploration Labs** [🔗](https://exploration-lab.github.io/)
+> *Aug 2024 – Present*
 
 > #### Quantitative Trading Intern
 >
 > **Optiver, Amsterdam**
->
-> - May '24 - Jul '24
+> *May 2024 – Jul 2024*
 
+> #### Teaching Assistant
+>
+> **IIT Kanpur***Jan 2025 – May 2025*
+>
+> - Assisted in “Algorithmic Game Theory” (CS656) instructed by [Prof. Sunil Simon](https://www.cse.iitk.ac.in/users/simon/) offered by the CSE Department, IITK.
+> - Assisted in "Introduction to Machine Learning" (EE952) instructed by [Prof. Sayak Ray Chowdhury](https://sites.google.com/view/sayakraychowdhury/home) offered by the *eMasters* initiative by IITK.
+
+---
+
+<!-- ===== Contact ===== -->
+
+## Get in Touch
+
+- ✉️ [Email](mailto:harshbihany7@gmail.com)
+- 💼 [LinkedIn](https://www.linkedin.com/in/harsh-bihany-b21a88230/)
+
+Feel free to reach out if you want to discuss research, collaboration, or otherwise!
