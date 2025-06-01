@@ -9,11 +9,24 @@ redirect_from:
 
 {% include base_path %}
 {% capture written_year %}'None'{% endcapture %}
-{% for post in site.posts %}
-  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-  {% if year != written_year %}
-    <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
-    {% capture written_year %}{{ year }}{% endcapture %}
-  {% endif %}
-  {% include archive-single.html %}
-{% endfor %}
+
+<div class="blog-posts-wrapper">
+  {% for post in site.posts %}
+    {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+    {% if year != written_year %}
+      <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
+      {% capture written_year %}{{ year }}{% endcapture %}
+    {% endif %}
+
+    <div class="blog-card">
+      <h3 class="blog-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p class="blog-meta">
+        🕒 {% include read-time.html %}<br>
+        📅 Published: {{ post.date | date: '%B %d, %Y' }}
+      </p>
+      <p class="blog-excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+      <a href="{{ post.url | relative_url }}" class="btn btn-sm">Read more →</a>
+    </div>
+  {% endfor %}
+</div>
+

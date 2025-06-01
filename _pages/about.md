@@ -32,10 +32,15 @@ Currently, I’m working on **multi-agent distributed reinforcement learning** u
 
 ## Publications
 
-- **“LoRMA: Low-Rank Multiplicative Adaptation for LLMs”**
-  *Harsh Bihany, Shubham Patel, & Ashutosh Modi*
-  Findings of the Association for Computational Linguistics: ACL 2025.
-  [📄 PDF](https://openreview.net/pdf?id=AXTK47joyI)
+<div class="publication">
+  <h3>LoRMA: Low-Rank Multiplicative Adaptation for LLMs</h3>
+  <p>
+    <strong>Authors:</strong> Harsh Bihany, Shubham Patel, & Ashutosh Modi<br>
+    <strong>Conference:</strong> Findings of the Association for Computational Linguistics: ACL 2025<br>
+    <a href="https://openreview.net/pdf?id=AXTK47joyI" target="_blank" class="btn btn-primary">📄 PDF</a>
+  </p>
+</div>
+
 
 <!-- > **Tip:** If you’d like to embed all my publications automatically, you can place a `publications.bib` file in `_bibliography/` and add `publication: true` to a dedicated `publications.md`—Academicpages will generate a formatted list for you. -->
 
@@ -54,22 +59,31 @@ Currently, I’m working on **multi-agent distributed reinforcement learning** u
 
 ## Work Experience
 
-> #### Undergraduate Researcher
->
-> **Exploration Labs** [🔗](https://exploration-lab.github.io/)
-> *Aug 2024 – Present*
+<div class="experience-group">
 
-> #### Quantitative Trading Intern
->
-> **Optiver, Amsterdam**
-> *May 2024 – Jul 2024*
+  <div class="experience">
+    <h4>Undergraduate Researcher</h4>
+    <p><strong>Exploration Labs</strong> <a href="https://exploration-lab.github.io/" target="_blank">🔗</a> <br>
+    <em>Aug 2024 – Present</em></p>
+  </div>
 
-> #### Teaching Assistant
->
-> **IIT Kanpur***Jan 2025 – May 2025*
->
-> - Assisted in “Algorithmic Game Theory” (CS656) instructed by [Prof. Sunil Simon](https://www.cse.iitk.ac.in/users/simon/) offered by the CSE Department, IITK.
-> - Assisted in "Introduction to Machine Learning" (EE952) instructed by [Prof. Sayak Ray Chowdhury](https://sites.google.com/view/sayakraychowdhury/home) offered by the *eMasters* initiative by IITK.
+  <div class="experience">
+    <h4>Quantitative Trading Intern</h4>
+    <p><strong>Optiver, Amsterdam</strong><br>
+    <em>May 2024 – Jul 2024</em></p>
+  </div>
+
+  <div class="experience">
+    <h4>Teaching Assistant</h4>
+    <p><strong>IIT Kanpur</strong><br>
+    <em>Jan 2025 – May 2025</em></p>
+    <ul>
+      <li>TA for “Algorithmic Game Theory” (CS656) – <a href="https://www.cse.iitk.ac.in/users/simon/">Prof. Sunil Simon</a></li>
+      <li>TA for “Introduction to Machine Learning” (EE952, eMasters) – <a href="https://sites.google.com/view/sayakraychowdhury/home">Prof. Sayak Ray Chowdhury</a></li>
+    </ul>
+  </div>
+
+</div>
 
 ---
 

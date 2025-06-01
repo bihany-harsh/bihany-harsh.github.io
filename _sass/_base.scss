@@ -313,3 +313,192 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
   -webkit-transition: $global-transition;
   transition: $global-transition;
 }
+
+// CUSTOM STYLES
+
+/* Style for the publication block */
+.publication {
+  background-color: #f9f9f9;
+  border-left: 4px solid #6c63ff;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+.publication:hover {
+  background-color: #f1f1ff;
+}
+
+.publication h3 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.publication p {
+  margin: 0.3rem 0;
+  color: #555;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.publication a.btn {
+  display: inline-block;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.85rem;
+  color: white;
+  background-color: #6c63ff;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  margin-top: 0.5rem;
+}
+
+.publication a.btn:hover {
+  background-color: #5848e5;
+  text-decoration: none;
+}
+
+/* Style for the button group used in Interests */
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Individual interest buttons */
+.btn {
+  display: inline-block;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background-color: #e0e7ff;
+  color: #1e1e1e;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: default;
+}
+
+.btn:hover {
+  background-color: #c7d2fe;
+  transform: translateY(-2px);
+}
+
+/* Work Experience Group Container */
+.experience-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Individual Experience Card */
+.experience {
+  background-color: #fdfdfd;
+  border-left: 4px solid #6c63ff;
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease;
+}
+
+.experience:hover {
+  transform: translateY(-2px);
+}
+
+.experience h4 {
+  margin: 0 0 0.4rem;
+  font-size: 1.05rem;
+  color: #2c2c2c;
+}
+
+.experience p {
+  margin: 0.3rem 0 0.7rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.experience ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  list-style: disc;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+
+/* Wrapper for the entire blog posts section */
+.blog-posts-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+/* Individual blog card */
+.blog-card {
+  background-color: #f9f9f9;
+  border-left: 4px solid #6c63ff;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  transition: all 0.2s ease;
+}
+
+.blog-card:hover {
+  background-color: #f1f0ff;
+  transform: translateY(-3px);
+}
+
+/* Title styling */
+.blog-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.blog-title a {
+  color: #333;
+  text-decoration: none;
+}
+
+.blog-title a:hover {
+  color: #6c63ff;
+  text-decoration: underline;
+}
+
+/* Metadata styling */
+.blog-meta {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
+}
+
+/* Excerpt styling */
+.blog-excerpt {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+/* Read more button */
+.btn-sm {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.8rem;
+  background-color: #6c63ff;
+  color: white;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-sm:hover {
+  background-color: #5848e5;
+}
