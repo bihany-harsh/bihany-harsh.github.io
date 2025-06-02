@@ -37,7 +37,7 @@ Currently, I’m working on **multi-agent distributed reinforcement learning** u
   <p>
     <strong>Authors:</strong> Harsh Bihany, Shubham Patel, & Ashutosh Modi<br>
     <strong>Conference:</strong> Findings of the Association for Computational Linguistics: ACL 2025<br>
-    <a href="https://openreview.net/pdf?id=AXTK47joyI" target="_blank" class="btn btn-primary">📄 PDF</a>
+    <!-- <a href="https://openreview.net/pdf?id=AXTK47joyI" target="_blank" class="btn btn-primary">📄 PDF</a> -->
   </p>
 </div>
 
