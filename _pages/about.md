@@ -10,8 +10,6 @@ redirect_from:
 
 I am **Harsh Bihany**, an undergraduate from the Indian Institute of Technology Kanpur, where I completed my Bachelor’s in [Computer Science and Engineering](https://cse.iitk.ac.in). I’ll soon be joining ETH Zurich’s [Department of Computer Science](https://inf.ethz.ch/) for my Master’s—fingers crossed everything pans out 😊. My interests span multiple areas in AI, from language models to multi-agent systems.
 
-Currently, I’m working on **multi-agent distributed reinforcement learning** under **temporal and epistemic specifications** (or other specification bounds).
-
 ---
 
 <!-- ===== Interests ===== -->
@@ -37,10 +35,9 @@ Currently, I’m working on **multi-agent distributed reinforcement learning** u
   <p>
     <strong>Authors:</strong> Harsh Bihany, Shubham Patel, & Ashutosh Modi<br>
     <strong>Conference:</strong> Findings of the Association for Computational Linguistics: ACL 2025<br>
-    <!-- <a href="https://openreview.net/pdf?id=AXTK47joyI" target="_blank" class="btn btn-primary">📄 PDF</a> -->
+    <a href="https://aclanthology.org/2025.findings-acl.527/" target="_blank" class="btn btn-primary">Link</a>
   </p>
 </div>
-
 
 <!-- > **Tip:** If you’d like to embed all my publications automatically, you can place a `publications.bib` file in `_bibliography/` and add `publication: true` to a dedicated `publications.md`—Academicpages will generate a formatted list for you. -->
 
@@ -61,19 +58,19 @@ Currently, I’m working on **multi-agent distributed reinforcement learning** u
 
 <div class="experience-group">
 
-  <div class="experience">
+<div class="experience">
     <h4>Undergraduate Researcher</h4>
     <p><strong>Exploration Labs</strong> <a href="https://exploration-lab.github.io/" target="_blank">🔗</a> <br>
     <em>Aug 2024 – Present</em></p>
   </div>
 
-  <div class="experience">
+<div class="experience">
     <h4>Quantitative Trading Intern</h4>
     <p><strong>Optiver, Amsterdam</strong><br>
     <em>May 2024 – Jul 2024</em></p>
   </div>
 
-  <div class="experience">
+<div class="experience">
     <h4>Teaching Assistant</h4>
     <p><strong>IIT Kanpur</strong><br>
     <em>Jan 2025 – May 2025</em></p>
