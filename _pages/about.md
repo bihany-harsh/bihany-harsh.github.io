@@ -8,7 +8,7 @@ redirect_from:
 ---
 <!-- ===== Introduction ===== -->
 
-I am **Harsh Bihany**, an undergraduate from the Indian Institute of Technology Kanpur, where I completed my Bachelor’s in [Computer Science and Engineering](https://cse.iitk.ac.in). I’ll soon be joining ETH Zurich’s [Department of Computer Science](https://inf.ethz.ch/) for my Master’s—fingers crossed everything pans out 😊. My interests span multiple areas in AI, from language models to multi-agent systems.
+I am **Harsh Bihany**, an undergraduate from the Indian Institute of Technology Kanpur, where I completed my Bachelor’s in [Computer Science and Engineering](https://cse.iitk.ac.in). I am currently pursuing my Master's from ETH Zurich’s [Department of Computer Science](https://inf.ethz.ch/). My interests span multiple areas in AI, from language models to multi-agent systems.
 
 ---
 
@@ -61,7 +61,7 @@ I am **Harsh Bihany**, an undergraduate from the Indian Institute of Technology 
 <div class="experience">
     <h4>Undergraduate Researcher</h4>
     <p><strong>Exploration Labs</strong> <a href="https://exploration-lab.github.io/" target="_blank">🔗</a> <br>
-    <em>Aug 2024 – Present</em></p>
+    <em>Aug 2024 – Aug 2025</em></p>
   </div>
 
 <div class="experience">
